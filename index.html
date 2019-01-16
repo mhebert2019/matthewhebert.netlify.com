@@ -14,45 +14,61 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-
-        <div class="bgimg-1">
+<!-- -->
+        <div class="parallax">
             <div class="caption">
-                <span class="border">SCROLL DOWN</span>
+                <span class="border" style="color: azure;background-color:#8b8383;">ABOUT ME</span>
             </div>
         </div>
+        <div class="w3-container">
+            <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-left-align">Finnish Language</button>
+            <div id="Demo1" class="w3-container w3-hide">
+                <div class="parallax">
+                    <div class="caption">
+                        <span class="border" style="color: black;background-color:#8b8383;">ABOUT ME</span>
+                    </div>
+                </div>
+                <h4  style="text-align:center;color: azure;background-color:#625c5c;">Finnish Language</h4>
+                <p style="color: azure;text-align: center;background-color:#625c5c;">stuff about taking finnish class idk</p>
+            </div>
 
-        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-            <h3 style="text-align:center;">Parallax Demo</h3>
-            <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
         </div>
-
+        <script>
+            function myFunction(id) {
+                var x = document.getElementById(id);
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else { 
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+        <div style="color: azure;background-color:#8b8383;text-align:center;padding:50px 80px;text-align: justify;">
+            <h3 style="text-align:center;color: azure;background-color:#625c5c;">Finnish Language</h3>
+            <p style="color: azure;text-align: center;">stuff about taking finnish class idk</p>
+        </div>
+<!-- -->
         <div class="bgimg-2">
             <div class="caption">
-                <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+                <span class="border" style="color: azure;background-color:#8b8383;font-size:25px;color: azure;">BAKING</span>
             </div>
         </div>
 
         <div style="position:relative;">
-            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-                <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+            <div style="color:azure;background-color:#8b8383;text-align:center;padding:50px 80px;text-align: justify;">
+                <p style="color: azure;text-align: center;>stuff about my interest in baking">test</p>
             </div>
         </div>
 
         <div class="bgimg-3">
             <div class="caption">
-                <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+                <span class="border" style="color:azure;background-color:#8b8383;font-size:25px;">interest #3</span>
             </div>
         </div>
 
         <div style="position:relative;">
-            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-                <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-            </div>
-        </div>
-
-        <div class="bgimg-1">
-            <div class="caption">
-                <span class="border">COOL!</span>
+            <div style="color:#ddd;background-color:#8b8383;text-align:center;padding:50px 80px;text-align: justify;">
+                <p style="color: azure;text-align: center;">stuff and things</p>
             </div>
         </div>
 
