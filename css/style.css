@@ -1,61 +1,74 @@
 body, html {
-                height: 100%;
-                margin: 0;
-                font: 400 15px/1.8 "Lato", sans-serif;
-                color: #777;
-            }
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
 
-            .bgimg-1, .bgimg-2, .bgimg-3 {
-                position: relative;
-                opacity: 0.65;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-            }
-            .bgimg-1 {
-                background-image: url("img_parallax.jpg");
-                min-height: 100%;
-            }
+}
+.bgimg-1 {
+    background-image: url("https://images.pexels.com/photos/953215/pexels-photo-953215.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    min-height: 100%;
+}
 
-            .bgimg-2 {
-                background-image: url("img_parallax2.jpg");
-                min-height: 400px;
-            }
+.bgimg-2 {
+    background-image: url("http://cakecrumbsbeachsand.com/wp-content/uploads/2011/11/MG_8590-650x433.jpg");
+    min-height: 400px;
+}
 
-            .bgimg-3 {
-                background-image: url("img_parallax3.jpg");
-                min-height: 400px;
-            }
+.bgimg-3 {
+    background-image: url("http://cakecrumbsbeachsand.com/wp-content/uploads/2011/11/MG_8590-650x433.jpg");
+    min-height: 400px;
+}
 
-            .caption {
-                position: absolute;
-                left: 0;
-                top: 50%;
-                width: 100%;
-                text-align: center;
-                color: #000;
-            }
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
 
-            .caption span.border {
-                background-color: #111;
-                color: #fff;
-                padding: 18px;
-                font-size: 25px;
-                letter-spacing: 10px;
-            }
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
 
-            h3 {
-                letter-spacing: 5px;
-                text-transform: uppercase;
-                font: 20px "Lato", sans-serif;
-                color: #111;
-            }
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
 
-            /* Turn off parallax scrolling for tablets and phones */
-            @media only screen and (max-device-width: 1024px) {
-                .bgimg-1, .bgimg-2, .bgimg-3 {
-                    background-attachment: scroll;
-                }
-            }
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+.parallax { 
+    /* The image used */
+    background-image: url("http://www.syke.fi/download/noname/%7B1973346A-E3B9-4F42-B622-B110BD5A4F62%7D/123270");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
