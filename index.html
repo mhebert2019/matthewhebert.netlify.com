@@ -12,66 +12,61 @@
         <link rel="stylesheet" href="css/W3.css">
         <link rel="stylesheet" href="css/W3-colors.css">
         <link rel="stylesheet" href="css/style.css">
+        <style>
+        </style>
     </head>
     <body>
-<!-- -->
-        <div class="parallax">
+        <!-- 
+<div class="parallax">
+<div class="caption">
+<span class="border" style="color: azure;background-color:#8b8383;">ABOUT ME</span>
+</div>
+</div>
+-->
+        <div class="bgimg-4">
             <div class="caption">
-                <span class="border" style="color: azure;background-color:#8b8383;">ABOUT ME</span>
+                <span class="border" style="color: azure;background-color:#8b8383;">About Me</span>
             </div>
         </div>
+        <!--Accordians --> 
         <div class="w3-container">
-            <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-left-align">Finnish Language</button>
-            <div id="Demo1" class="w3-container w3-hide">
-                <div class="parallax">
-                    <div class="caption">
-                        <span class="border" style="color: black;background-color:#8b8383;">ABOUT ME</span>
+            <!--Section 1 -->
+            <div>
+                <button class="accordion" style="text-align: center">Section 1</button>
+                <div class="panel">
+                    <div class="bgimg-1">
+                        <div class="caption">
+                            <span class="border" style="color: azure;background-color:#8b8383;">Finnish Langauge</span>
+                            <p style="color: azure;text-align: center;background-color:#625c5c;padding:50px 80px;">stuff about taking finnish class idk</p>
+                        </div>
                     </div>
                 </div>
-                <h4  style="text-align:center;color: azure;background-color:#625c5c;">Finnish Language</h4>
-                <p style="color: azure;text-align: center;background-color:#625c5c;">stuff about taking finnish class idk</p>
             </div>
-
-        </div>
-        <script>
-            function myFunction(id) {
-                var x = document.getElementById(id);
-                if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                } else { 
-                    x.className = x.className.replace(" w3-show", "");
-                }
-            }
-        </script>
-        <div style="color: azure;background-color:#8b8383;text-align:center;padding:50px 80px;text-align: justify;">
-            <h3 style="text-align:center;color: azure;background-color:#625c5c;">Finnish Language</h3>
-            <p style="color: azure;text-align: center;">stuff about taking finnish class idk</p>
-        </div>
-<!-- -->
-        <div class="bgimg-2">
-            <div class="caption">
-                <span class="border" style="color: azure;background-color:#8b8383;font-size:25px;color: azure;">BAKING</span>
+            <!--Section 2 -->
+            <div>
+                <button class="accordion" style="text-align: center">Section 2</button>
+                <div class="panel">
+                    <div class="bgimg-2">
+                        <div class="caption">
+                            <span class="border" style="color: azure;background-color:#8b8383;">Baking</span>
+                            <p style="color: azure;text-align: center;background-color:#625c5c;padding:50px 80px;">stuff about baking</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div style="position:relative;">
-            <div style="color:azure;background-color:#8b8383;text-align:center;padding:50px 80px;text-align: justify;">
-                <p style="color: azure;text-align: center;>stuff about my interest in baking">test</p>
+            <!--Section 3 -->
+            <div>
+                <button class="accordion" style="text-align: center">Section 3</button>
+                <div class="panel">
+                    <div class="bgimg-3">
+                        <div class="caption">
+                            <span class="border" style="color: azure;background-color:#8b8383;">numba 3</span>
+                            <p style="color: azure;text-align: center;background-color:#625c5c;padding:50px 80px;">stuff and things</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="bgimg-3">
-            <div class="caption">
-                <span class="border" style="color:azure;background-color:#8b8383;font-size:25px;">interest #3</span>
-            </div>
-        </div>
-
-        <div style="position:relative;">
-            <div style="color:#ddd;background-color:#8b8383;text-align:center;padding:50px 80px;text-align: justify;">
-                <p style="color: azure;text-align: center;">stuff and things</p>
-            </div>
-        </div>
-
-
+        <script src="js/accordian.js"></script>
     </body>
 </html>
